@@ -1,0 +1,47 @@
+&DomainSize
+	nx = 320
+	ny = 32
+	lattice_type = 9
+/
+&Cylinder
+	ncy = 60
+	L_front = 10
+	L_back = 35
+	L_top = 10
+	L_bot = 10
+/
+&Numbers
+	Re = 200
+/
+&Parallel
+	num_threads=32
+	nprocsx = 1
+	nprocsy = 1
+/
+&Controls
+	uo = 0.1
+	rho_infty = 1.19530
+	iplot = 1000
+	max_iter = 1000
+	isave = 10000
+	irestart = 0
+	statsbegin =  350001
+	statsend = 390001
+	iplotstats = 1000
+	cycle_period = 2730
+
+/
+&LogicalControls
+	post_process = .false.
+	x_periodic = .false.
+	y_periodic = .true.
+	channel_with_cylinder = .true.
+	channel_with_square = .false.
+	incomp_bc = .false.
+	incomp_bulk = .false.
+	vel_interp = .true.
+	mom_interp = .true.
+	rotated_coordinate = .true.
+	strong_mass_bc = .true.
+	eq_mass_bc = .false.
+	weak_mass_bc = .false.
