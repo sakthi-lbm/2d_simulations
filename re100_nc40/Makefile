@@ -4,7 +4,7 @@ FFLAGS = -fopenmp -O3
 
 # Files and output
 SRC = 2d_mrlbm.f90
-OUT = OUT = 2d_mrlbm_re100_nc40
+OUT = 2d_mrlbm_re100_nc40
 
 # Build and run
 all:
