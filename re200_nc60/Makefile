@@ -4,12 +4,12 @@ FFLAGS = -fopenmp -O3
 
 # Files and output
 SRC = 2d_mrlbm.f90
-OUT = a.out
+OUT = 2d_mrlbm_re200_nc60
 
 # Build and run
 all:
 	$(FC) $(FFLAGS) $(SRC) -o $(OUT)
-	./$(OUT)
+	# ./$(OUT)
 
 # Clean rule
 .PHONY: clean
